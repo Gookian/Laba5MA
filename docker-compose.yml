@@ -1,0 +1,6 @@
+services:
+  laba5ma:
+    image: ${DOCKER_REGISTRY-}laba5ma
+    build:
+      context: .
+      dockerfile: Laba5MA/Dockerfile

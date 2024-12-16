@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  laba5ma:
+    image: gookians/service1:v1
+    ports:
+      - "8080:8080"
+    networks:
+      - lab5ma-network
+    deploy:
+      replicas: 1
+    
+networks:
+  lab5ma-network:
+     external: true

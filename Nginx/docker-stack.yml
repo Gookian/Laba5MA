@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  gateway:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - lab5ma-network
+
+networks:
+  lab5ma-network:
+    external: true
