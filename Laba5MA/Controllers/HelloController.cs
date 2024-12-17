@@ -2,7 +2,7 @@
 
 namespace Laba5MA.Controllers
 {
-    [Route("service1/api/v1/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class HelloController : ControllerBase
     {
