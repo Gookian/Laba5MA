@@ -44,7 +44,7 @@ namespace Laba5MA
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "api/v1/{controller=Persons}/{action=Index}/{id?}");
+                    pattern: "service1/api/v1/{controller=Persons}/{action=Index}/{id?}");
             });
         }
     }
